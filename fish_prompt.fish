@@ -37,9 +37,8 @@ function fish_prompt
   end
 
   # Line 1
-  echo -n $red'┌'$green$USER$white'@'$green$__fish_prompt_hostname $blue(prompt_pwd)$normal
+  echo -n $red'┌'$green$USER$white'@'$green$__fish_prompt_hostname $blue\((prompt_pwd)\)$normal
   __fish_git_prompt
-  # Check for gwip; does last commit log contain --wip--?
   echo
 
   # Line 2
