@@ -21,6 +21,7 @@ function fish_prompt
   set -l gray (set_color normal)
   set -l brwhite (set_color -o white)
   set -l green (set_color -o green)
+  set -l blue (set_color -o blue)
 
   # Configure __fish_git_prompt
   set -g __fish_git_prompt_showdirtystate true
@@ -36,7 +37,7 @@ function fish_prompt
   end
 
   # Line 1
-  echo -n $red'┌'$green$USER$white'@'$green$__fish_prompt_hostname $gray(prompt_pwd)$normal
+  echo -n $red'┌'$green$USER$white'@'$green$__fish_prompt_hostname $blue(prompt_pwd)$normal
   __fish_git_prompt
   # Check for gwip; does last commit log contain --wip--?
   echo
