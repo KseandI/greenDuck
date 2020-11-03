@@ -42,5 +42,5 @@ function fish_prompt
   echo
 
   # Line 2
-  echo -n $red'└'$pcolor$__fish_prompt_char $normal
+  echo -n $red'└'$pcolor'['$last_status']'$__fish_prompt_char $normal
 end
